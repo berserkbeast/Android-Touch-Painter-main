@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <com.example.itsamsung_painter.DrawingCanvas
+        android:id="@+id/drawing_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.example.itsamsung_painter.DrawingCanvas>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="@string/clear_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <Button
+            android:id="@+id/undo_button"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="@string/undo_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear_button"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/eraser_button"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="@string/eraser_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toEndOf="@+id/undo_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/colorPicker_button"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="@string/colorPicker_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.889"
+            app:layout_constraintStart_toEndOf="@+id/eraser_button"
+            app:layout_constraintTop_toBottomOf="@+id/clear_button"
+            app:layout_constraintVertical_bias="0.875" />
+
+        <Button
+            android:id="@+id/line_button"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="@string/line_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/colorPicker_button"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toEndOf="@+id/eraser_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/circle_mode"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="29dp"
+            android:text="@string/circle_button"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/eraser_button"
+            app:layout_constraintEnd_toStartOf="@+id/line_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/clear_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

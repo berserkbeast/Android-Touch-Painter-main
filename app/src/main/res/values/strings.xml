@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">itsamsung_painter</string>
+    <string name="clear_button">Clear</string>
+    <string name="undo_button">Undo</string>
+    <string name="rectangle_button">Rect Mode</string>
+    <string name="eraser_button">Eraser</string>
+    <string name="colorPicker_button">Color Picker</string>
+    <string name="line_button">Line Mode</string>
+    <string name="circle_button">Circle Mode</string>
+</resources>
